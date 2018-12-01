@@ -1,18 +1,18 @@
-package maxplus.kmj.com.maxplus;
+package maxplus.kmj.com.maxplus.fragments;
 
-import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class WithdrawFragment extends Fragment {
+import maxplus.kmj.com.maxplus.R;
+
+public class MessageFragment extends Fragment {
 
 
-    public static WithdrawFragment newInstance() {
-        WithdrawFragment fragment = new WithdrawFragment();
+    public static MessageFragment newInstance() {
+        MessageFragment fragment = new MessageFragment();
         Bundle args = new Bundle();
 
         fragment.setArguments(args);
@@ -30,7 +30,7 @@ public class WithdrawFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View v;
-        v=inflater.inflate(R.layout.fragment_withdraw, container, false);
+        v=inflater.inflate(R.layout.fragment_message, container, false);
         return v;
     }
 

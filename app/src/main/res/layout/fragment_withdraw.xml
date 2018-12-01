@@ -3,80 +3,211 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#35c69d">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="withdraw"
-            android:textSize="70sp" />
+        <LinearLayout
+            android:id="@+id/withdraw_linear1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:weightSum="6"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/withdraw_tv1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="[입금]"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/withdraw_tv2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="[출금]"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/withdraw_tv3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="[이동]"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/withdraw_tv4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="[이벤트]"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </LinearLayout>
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/withdraw_title1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="withdraw"
-            android:textSize="70sp"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:text="코인검색"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/withdraw_linear1" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/withdraw_c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="12dp"
+            android:background="#fff"
+            app:layout_constraintLeft_toLeftOf="@id/withdraw_title1"
+            app:layout_constraintTop_toBottomOf="@id/withdraw_title1">
+
+            <Spinner
+                android:id="@+id/withdraw_spinner"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:entries="@array/bit"></Spinner>
+        </android.support.constraint.ConstraintLayout>
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/withdraw_title2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="withdraw"
-            android:textSize="70sp"
-            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            android:layout_marginTop="20dp"
+            android:text="출금액"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/withdraw_title1"
+            app:layout_constraintTop_toBottomOf="@id/withdraw_c1" />
+
+        <EditText
+            android:id="@+id/withdraw_et1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:background="#fff"
+            android:inputType="number"
+
+            app:layout_constraintLeft_toLeftOf="@id/withdraw_c1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/withdraw_title2" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/withdraw_title3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="withdraw"
-            android:textSize="70sp"
-            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            android:layout_marginTop="20dp"
+            android:text="출금은행"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/withdraw_title1"
+            app:layout_constraintTop_toBottomOf="@id/withdraw_et1" />
+
+        <EditText
+            android:id="@+id/withdraw_et2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="40dp"
+            android:background="#fff"
+
+            app:layout_constraintLeft_toLeftOf="@id/withdraw_c1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/withdraw_title3" />
+        />
 
         <TextView
-            android:id="@+id/textView7"
+            android:id="@+id/withdraw_title4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="withdraw"
-            android:textSize="70sp"
-            app:layout_constraintTop_toBottomOf="@+id/textView5"
- />
+            android:layout_marginTop="20dp"
+            android:text="예금주"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/withdraw_title1"
+            app:layout_constraintTop_toBottomOf="@id/withdraw_et2" />
+
+        <EditText
+            android:id="@+id/withdraw_et3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:background="#fff"
+
+            app:layout_constraintLeft_toLeftOf="@id/withdraw_c1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/withdraw_title4" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/withdraw_title5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="withdraw"
-            android:textSize="70sp"
-            app:layout_constraintTop_toBottomOf="@+id/textView7"
-            />
+            android:layout_marginTop="20dp"
+            android:text="출금계좌"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/withdraw_title1"
+            app:layout_constraintTop_toBottomOf="@id/withdraw_et3" />
 
-        <TextView
-            android:id="@+id/textView9"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/withdraw_et4"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:background="#fff"
+
+            android:inputType="number"
+            app:layout_constraintLeft_toLeftOf="@id/withdraw_c1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/withdraw_title5" />
+
+        <Button
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="withdraw"
-            android:textSize="70sp"
-            app:layout_constraintTop_toBottomOf="@+id/textView8"
-            />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:text="withdraw"
-            android:textSize="70sp"
-            app:layout_constraintTop_toBottomOf="@+id/textView9"
-            />
-
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_deposit_bt"
+            android:text="신청완료"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/withdraw_et4" />
     </android.support.constraint.ConstraintLayout>
 
 </ScrollView>

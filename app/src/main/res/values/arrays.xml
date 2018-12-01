@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bit">
+        <item>비트코인</item>
+        <item>이더리움</item>
+        <item>대시</item>
+        <item>리플</item>
+        <item>퀀텀</item>
+        <item>이오스</item>
+        <item>트론</item>
+        <item>비트캐시</item>
+        <item>월튼체인</item>
+        <item>웨이브</item>
+
+    </string-array>
+</resources>

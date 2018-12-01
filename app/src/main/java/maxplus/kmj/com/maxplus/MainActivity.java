@@ -1,10 +1,7 @@
 package maxplus.kmj.com.maxplus;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.util.Log;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -13,6 +10,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import maxplus.kmj.com.maxplus.fragments.AccountFragment;
+import maxplus.kmj.com.maxplus.fragments.BuyFragment;
+import maxplus.kmj.com.maxplus.fragments.DepositFragment;
+import maxplus.kmj.com.maxplus.fragments.ErrorFragment;
+import maxplus.kmj.com.maxplus.fragments.EventFragment;
+import maxplus.kmj.com.maxplus.fragments.EventnoticeFragment;
+import maxplus.kmj.com.maxplus.fragments.MediaFragment;
+import maxplus.kmj.com.maxplus.fragments.MessageFragment;
+import maxplus.kmj.com.maxplus.fragments.MoveFragment;
+import maxplus.kmj.com.maxplus.fragments.NoticeFragment;
+import maxplus.kmj.com.maxplus.fragments.WithdrawFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -35,7 +44,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -65,26 +74,42 @@ public class MainActivity extends AppCompatActivity
                 getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,withdrawFragment.newInstance()).commit();
                 break;
             case R.id.move:
+                MoveFragment moveFragment=new MoveFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,moveFragment.newInstance()).commit();
                 break;
             case R.id.event:
+                EventFragment eventFragment=new EventFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,eventFragment.newInstance()).commit();
                 break;
 
             case R.id.message:
-                Log.e("gg","2");
+                MessageFragment messageFragment=new MessageFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,messageFragment.newInstance()).commit();
                 break;
             case R.id.account:
+                AccountFragment accountFragment=new AccountFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,accountFragment.newInstance()).commit();
                 break;
 
             case R.id.notice:
-                Log.e("gg","3");
+                NoticeFragment noticeFragment=new NoticeFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,noticeFragment.newInstance()).commit();
                 break;
             case R.id.error:
+                ErrorFragment errorFragment=new ErrorFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,errorFragment.newInstance()).commit();
                 break;
             case R.id.eventnotice:
+                EventnoticeFragment eventnoticeFragment=new EventnoticeFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,eventnoticeFragment.newInstance()).commit();
                 break;
             case R.id.media:
+                MediaFragment mediaFragment=new MediaFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,mediaFragment.newInstance()).commit();
                 break;
                 case R.id.buy:
+                    BuyFragment buyFragment=new BuyFragment();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,buyFragment.newInstance()).commit();
                 break;
 
         }
