@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:id="@+id/eventnoticechild_t1"
+            android:id="@+id/eventnoticechild_childt2"
 
             android:layout_width="match_parent"
             android:layout_height="33dp"
@@ -64,6 +64,54 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/eventnoticechild_childl2"
+
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:orientation="horizontal"
+            android:weightSum="6"
+            app:layout_constraintTop_toBottomOf="@id/eventnoticechild_childt2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="[미디어]"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="[쿠폰구매]"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
         <View
             android:id="@+id/eventnoticechild_line"
             android:layout_width="0dp"
@@ -72,21 +120,20 @@
             android:background="#000"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/eventnoticechild_t1"
+            app:layout_constraintTop_toBottomOf="@id/eventnoticechild_childl2"
 
             />
-
         <TextView
             android:id="@+id/eventnoticechild_t4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"
-            android:text="포인트대박이벤트"
-            android:textSize="23sp"
+            app:layout_constraintTop_toBottomOf="@id/eventnoticechild_line"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/eventnoticechild_t5"
-            app:layout_constraintTop_toBottomOf="@id/eventnoticechild_line" />
-
+            android:text="포인트대박이벤트"
+            android:textSize="23sp"
+            />
         <TextView
             android:id="@+id/eventnoticechild_t5"
             android:layout_width="wrap_content"
@@ -98,18 +145,17 @@
             app:layout_constraintLeft_toRightOf="@id/eventnoticechild_t4"
             app:layout_constraintRight_toRightOf="@id/eventnoticechild_line"
             app:layout_constraintTop_toBottomOf="@id/eventnoticechild_line" />
-
         <TextView
-            android:id="@+id/eventnoticechild_t6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="23sp"
+            app:layout_constraintTop_toBottomOf="@id/eventnoticechild_line2"
+            app:layout_constraintLeft_toLeftOf="parent"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="30dp"
             android:text="현재 포인트 대박이벤트가 진행중입니다."
-            android:textSize="23sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/eventnoticechild_line2" />
-
+            android:id="@+id/eventnoticechild_t6"
+            />
         <View
             android:id="@+id/eventnoticechild_line2"
             android:layout_width="0dp"
@@ -128,8 +174,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="@drawable/ic_deposit_bt"
-            android:inputType="number"
             android:text="신청완료"
+            android:inputType="number"
             android:textColor="#fff"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"

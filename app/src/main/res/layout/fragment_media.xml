@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:id="@+id/media_l1"
+            android:id="@+id/media_childt2"
 
             android:layout_width="match_parent"
             android:layout_height="33dp"
@@ -65,13 +65,13 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/media_l2"
+            android:id="@+id/media_childl2"
 
             android:layout_width="match_parent"
             android:layout_height="33dp"
             android:orientation="horizontal"
             android:weightSum="6"
-            app:layout_constraintTop_toBottomOf="@id/media_l1">
+            app:layout_constraintTop_toBottomOf="@id/media_childt2">
 
             <TextView
                 android:layout_width="0dp"
@@ -120,7 +120,7 @@
             android:background="#000"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/media_l2"
+            app:layout_constraintTop_toBottomOf="@id/media_childl2"
 
             />
 

@@ -10,8 +10,9 @@
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
-            android:id="@+id/media_childt2"
+            android:id="@+id/noticechild_childt2"
 
             android:layout_width="match_parent"
             android:layout_height="33dp"
@@ -25,7 +26,7 @@
                 android:layout_weight="1" />
 
             <TextView
-                android:id="@+id/media_tv1"
+                android:id="@+id/noticechild_tv1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -35,7 +36,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/media_tv2"
+                android:id="@+id/noticechild_tv2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -46,7 +47,7 @@
 
 
             <TextView
-                android:id="@+id/media_tv4"
+                android:id="@+id/noticechild_tv4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -64,13 +65,13 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/media_childl2"
+            android:id="@+id/noticechild_childl2"
 
             android:layout_width="match_parent"
             android:layout_height="33dp"
             android:orientation="horizontal"
             android:weightSum="6"
-            app:layout_constraintTop_toBottomOf="@id/media_childt2">
+            app:layout_constraintTop_toBottomOf="@id/noticechild_childt2">
 
             <TextView
                 android:layout_width="0dp"
@@ -112,60 +113,89 @@
         </LinearLayout>
 
         <View
-            android:id="@+id/Mediachild_line"
+            android:id="@+id/noticechild_line"
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_marginTop="20dp"
             android:background="#000"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/media_childt2"
+            app:layout_constraintTop_toBottomOf="@id/noticechild_childl2"
 
             />
         <TextView
-            android:id="@+id/Mediachild_t4"
+            android:id="@+id/noticechild_t4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"
-            app:layout_constraintTop_toBottomOf="@id/Mediachild_line"
+            app:layout_constraintTop_toBottomOf="@id/noticechild_line"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/Mediachild_t5"
-            android:text="코인투자론 명강의"
+            app:layout_constraintRight_toLeftOf="@id/noticechild_t5"
+            android:text="리플 100 구매 완료"
             android:textSize="23sp"
             />
         <TextView
-            android:id="@+id/Mediachild_t5"
+            android:id="@+id/noticechild_t5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="30sp"
             android:layout_marginRight="30dp"
             android:text="2018-10-04"
             android:textSize="23sp"
-            app:layout_constraintLeft_toRightOf="@id/Mediachild_t4"
-            app:layout_constraintRight_toRightOf="@id/Mediachild_line"
-            app:layout_constraintTop_toBottomOf="@id/Mediachild_line" />
+            app:layout_constraintLeft_toRightOf="@id/noticechild_t4"
+            app:layout_constraintRight_toRightOf="@id/noticechild_line"
+            app:layout_constraintTop_toBottomOf="@id/noticechild_line" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/noticechild_t6"
+            android:text="리플 100 구매 완료"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/noticechild_line2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
 
+            android:id="@+id/noticechild_t7"
+            android:text="회원님께서는 2018년 10월 04일"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/noticechild_t6" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/noticechild_t8"
+            android:text="14:32에 1:612의 구매비율로 해당"
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/noticechild_t7" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+
+            android:id="@+id/noticechild_t9"
+            android:text="코인을 구매 완료 하였습니다."
+            android:textSize="20sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/noticechild_t8" />
         <View
-            android:id="@+id/Mediachild_line2"
+            android:id="@+id/noticechild_line2"
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_marginTop="20dp"
             android:background="#000"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/Mediachild_t5"
+            app:layout_constraintTop_toBottomOf="@id/noticechild_t5"
 
             />
-        <ImageView
-            android:layout_width="match_parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginLeft="30dp"
-            app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginRight="30dp"
-            android:src="@drawable/img_chicken"
-            app:layout_constraintTop_toBottomOf="@id/Mediachild_line2"
-            android:id="@+id/Mediachild_img"
-            android:layout_height="400dp" />
+
 
         <Button
             android:layout_width="150dp"
@@ -179,7 +209,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/Mediachild_img" />
+            app:layout_constraintTop_toBottomOf="@id/noticechild_t9" />
 
     </android.support.constraint.ConstraintLayout>
 
