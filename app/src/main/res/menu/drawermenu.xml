@@ -12,6 +12,7 @@
     </item>
     <item android:title="My Menu">
         <menu android:checkableBehavior="single">
+            <item android:id="@+id/myinfo" android:title="내정보"/>
             <item android:id="@+id/message" android:title="메시지"/>
             <item android:id="@+id/account" android:title="입금계좌"/>
         </menu>

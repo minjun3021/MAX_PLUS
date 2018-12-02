@@ -20,6 +20,7 @@ import maxplus.kmj.com.maxplus.fragments.EventnoticeFragment;
 import maxplus.kmj.com.maxplus.fragments.MediaFragment;
 import maxplus.kmj.com.maxplus.fragments.MessageFragment;
 import maxplus.kmj.com.maxplus.fragments.MoveFragment;
+import maxplus.kmj.com.maxplus.fragments.MyinfoFragment;
 import maxplus.kmj.com.maxplus.fragments.NoticeFragment;
 import maxplus.kmj.com.maxplus.fragments.WithdrawFragment;
 
@@ -81,6 +82,10 @@ public class MainActivity extends AppCompatActivity
             case R.id.event:
                 EventFragment eventFragment=new EventFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,eventFragment.newInstance()).commit();
+                break;
+            case R.id.myinfo:
+                MyinfoFragment myinfoFragment=new MyinfoFragment();
+                getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,myinfoFragment.newInstance()).commit();
                 break;
 
             case R.id.message:

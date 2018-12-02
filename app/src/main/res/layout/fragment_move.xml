@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#35c69d">
@@ -74,7 +75,6 @@
             android:id="@+id/move_title1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_marginTop="15dp"
             android:text="이동 코인 선택"
             android:textSize="25sp"
@@ -87,7 +87,6 @@
             android:id="@+id/move_title2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_marginTop="15dp"
             android:text="받는 코인 선택"
             android:textSize="25sp"
@@ -100,7 +99,7 @@
             android:id="@+id/move_c1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+
             android:layout_marginTop="12dp"
             android:background="#fff"
             app:layout_constraintLeft_toLeftOf="@id/move_title1"
@@ -118,7 +117,7 @@
             android:id="@+id/move_c2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
+
             android:layout_marginTop="12dp"
             android:background="#fff"
             app:layout_constraintLeft_toLeftOf="@id/move_title2"
@@ -131,40 +130,47 @@
                 android:layout_height="50dp"
                 android:entries="@array/bit"></Spinner>
         </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/move_title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="100dp"
+            android:text="이동금액"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/move_c1" />
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/move_et1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="40dp"
+            android:background="#fff"
+
+            app:layout_constraintLeft_toLeftOf="@id/move_c1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/move_title3" />
+
         <Button
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="@drawable/ic_deposit_bt"
             android:text="신청완료"
+            android:inputType="number"
             android:textColor="#fff"
             android:textSize="30sp"
-            app:layout_constraintTop_toBottomOf="@id/move_c1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent" />
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/move_et1" />
+
+
     </android.support.constraint.ConstraintLayout>
-    <TextView
-        android:id="@+id/move_title3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="입금자명"
-        android:textSize="25sp"
-        android:textStyle="bold"
-        app:layout_constraintLeft_toLeftOf="@id/move_title1"
-        app:layout_constraintTop_toBottomOf="@id/move_c1" />
-
-    <EditText
-        android:id="@+id/move_et1"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginRight="40dp"
-        android:background="#fff"
-
-        app:layout_constraintLeft_toLeftOf="@id/move_c1"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/move_title2" />
-
-</ScrollView>
+</FrameLayout>

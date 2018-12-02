@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:id="@+id/eventnotice_l1"
+            android:id="@+id/Mediachild_t1"
 
             android:layout_width="match_parent"
             android:layout_height="33dp"
@@ -26,7 +26,7 @@
                 android:layout_weight="1" />
 
             <TextView
-                android:id="@+id/eventnotice_tv1"
+                android:id="@+id/Mediachild_tv1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -36,7 +36,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/eventnotice_tv2"
+                android:id="@+id/Mediachild_tv2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -47,7 +47,7 @@
 
 
             <TextView
-                android:id="@+id/eventnotice_tv4"
+                android:id="@+id/Mediachild_tv4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -64,86 +64,75 @@
                 android:textStyle="bold" />
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/eventnotice_l2"
-
-            android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:orientation="horizontal"
-            android:weightSum="6"
-            app:layout_constraintTop_toBottomOf="@id/eventnotice_l1">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="[미디어]"
-                android:textSize="17sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center"
-                android:text="[쿠폰구매]"
-                android:textSize="14sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
-        </LinearLayout>
-
         <View
-            android:id="@+id/eventnotice_line"
+            android:id="@+id/Mediachild_line"
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_marginTop="20dp"
             android:background="#000"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/eventnotice_l2"
+            app:layout_constraintTop_toBottomOf="@id/Mediachild_t1"
 
             />
-
         <TextView
-            android:id="@+id/eventnotice_info1"
+            android:id="@+id/Mediachild_t4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="이벤트"
-            android:textSize="17sp"
+            android:layout_marginTop="30sp"
+            app:layout_constraintTop_toBottomOf="@id/Mediachild_line"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/Mediachild_t5"
+            android:text="코인투자론 명강의"
+            android:textSize="23sp"
+            />
+        <TextView
+            android:id="@+id/Mediachild_t5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="30dp"
+            android:text="2018-10-04"
+            android:textSize="23sp"
+            app:layout_constraintLeft_toRightOf="@id/Mediachild_t4"
+            app:layout_constraintRight_toRightOf="@id/Mediachild_line"
+            app:layout_constraintTop_toBottomOf="@id/Mediachild_line" />
+
+        <View
+            android:id="@+id/Mediachild_line2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="#000"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/eventnotice_line" />
+            app:layout_constraintTop_toBottomOf="@id/Mediachild_t5"
 
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/eventnotice_recyclerview"
+            />
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="50dp"
-            app:layout_constraintTop_toBottomOf="@id/eventnotice_line"
-            tools:listitem="@layout/item_notice"></android.support.v7.widget.RecyclerView>
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="30dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/img_chicken"
+            app:layout_constraintTop_toBottomOf="@id/Mediachild_line2"
+            android:id="@+id/Mediachild_img"
+            android:layout_height="400dp" />
 
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/ic_deposit_bt"
+            android:text="신청완료"
+            android:inputType="number"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Mediachild_img" />
 
     </android.support.constraint.ConstraintLayout>
 
