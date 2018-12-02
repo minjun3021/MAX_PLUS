@@ -31,7 +31,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="[내정보]"
+                android:text="[공지사항]"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
@@ -41,7 +41,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="[메세지]"
+                android:text="[오류문의]"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 
@@ -52,7 +52,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="[입금계좌]"
+                android:text="[이벤트]"
                 android:textSize="17sp"
                 android:textStyle="bold" />
 

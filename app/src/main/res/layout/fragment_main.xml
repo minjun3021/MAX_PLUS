@@ -1,0 +1,701 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/fmain_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:text="코인 보유 현황 및 상태"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/fmain_l6"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="#000"
+            app:layout_constraintLeft_toLeftOf="@id/fmain_t1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fmain_tv1"
+
+            />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/fmain_c1"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/ic_login_et"
+            app:layout_constraintLeft_toLeftOf="@id/fmain_tv1"
+            app:layout_constraintRight_toRightOf="@id/fmain_l6"
+            app:layout_constraintTop_toBottomOf="@id/fmain_l6">
+
+            <LinearLayout
+                android:id="@+id/fmain_ll1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:orientation="vertical"
+                android:weightSum="9"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/fmain_b1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_reg_bt"
+                    android:text="입금"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/fmain_b2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_reg_bt"
+                    android:text="출금"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/fmain_b3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_reg_bt"
+                    android:text="이동"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/fmain_b4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/ic_reg_bt"
+                    android:text="이벤트"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll2"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                app:layout_constraintLeft_toRightOf="@id/fmain_ll1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/fmain_cprice1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="- 비트코인 : 1250"
+
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fmain_cprice2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="- 이더리움 : 1250"
+
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fmain_cprice3"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="- 대시 : 1250"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fmain_cprice4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="- 리플 : 1250"
+
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fmain_cprice5"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="- 퀀텀 : 1250"
+
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fmain_cprice6"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="- 이오스 : 1250"
+
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fmain_cprice7"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="- 트론 : 1250"
+
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fmain_cprice8"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="- 비트캐시 : 1250"
+
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fmain_cprice9"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="- 월튼체인 : 1250"
+
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/fmain_cprice10"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="- 웨이브 : 1250"
+
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toRightOf="@id/ll2"
+                app:layout_constraintRight_toRightOf="parent">
+
+                <TextView
+                    android:id="@+id/fmain_ccheck1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="- 비트코인 : 점검중"
+
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fmain_ccheck2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="- 이더리움 : 점검중"
+
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fmain_ccheck3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:text="- 대시 : 점검중"
+
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fmain_ccheck4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="- 리플 : 점검중"
+
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fmain_ccheck5"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:text="- 퀀텀 : 점검중"
+
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fmain_ccheck6"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="- 이오스 : 점검중"
+
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fmain_ccheck7"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="- 트론 : 점검중"
+
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fmain_ccheck8"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:text="- 비트캐시 : 점검중"
+
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fmain_ccheck9"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="- 월튼체인 : 점검중"
+
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/fmain_ccheck10"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight="1"
+                    android:text="- 웨이브 : 점검중"
+
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/fmain_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30dp"
+            android:text="맥스플러스 메뉴"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="@id/fmain_tv1"
+            app:layout_constraintTop_toBottomOf="@id/fmain_c1" />
+
+        <View
+            android:id="@+id/fmain_l7"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="#000"
+            app:layout_constraintLeft_toLeftOf="@id/fmain_t1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fmain_tv2"
+
+            />
+
+        <LinearLayout
+            android:id="@+id/fmain_ll2"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+
+            android:orientation="horizontal"
+
+            app:layout_constraintTop_toBottomOf="@id/fmain_l7">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+
+                android:layout_weight="1"
+                android:background="@drawable/ic_reg_bt"
+                android:gravity="center"
+                android:text="맥스뱅킹"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/fmain_deposit"
+                    android:gravity="center"
+                    android:text="입금" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="출금"
+                    android:id="@+id/fmain_withdraw"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="이동"
+                    android:id="@+id/fmain_move"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:id="@+id/fmain_event"
+                    android:text="이벤트"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_reg_bt"
+                android:gravity="center"
+                android:text="My\nMENU"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="4"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="내정보"
+                    android:id="@+id/fmain_myinfo"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="메세지"
+                    android:id="@+id/fmain_message"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:id="@+id/fmain_account"
+                    android:text="입금\n계좌"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/ic_reg_bt"
+                android:gravity="center"
+                android:text="서비스"
+                android:textColor="#fff"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="5"
+                android:layout_weight="1">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="공지"
+                    android:id="@+id/fmain_notice"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="오류"
+                    android:id="@+id/fmain_error"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="이벤트"
+                    android:id="@+id/fmain_eventnotice"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="미디어"
+                    android:id="@+id/fmain_media"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="쿠폰"
+                    android:id="@+id/fmain_buy"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/fmain_t1"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="20sp"
+            android:text="이벤트"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fmain_ll2"
+
+            />
+
+        <View
+            android:id="@+id/fmain_l1"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="#000"
+            app:layout_constraintLeft_toLeftOf="@id/fmain_t1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fmain_t1"
+
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/fmain_viewpager"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintLeft_toLeftOf="@id/fmain_l1"
+            app:layout_constraintRight_toRightOf="@id/fmain_l1"
+            app:layout_constraintTop_toBottomOf="@id/fmain_l1">
+
+        </android.support.v4.view.ViewPager>
+
+        <TextView
+            android:id="@+id/fmain_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="30sp"
+            android:text="공지사항"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="@id/fmain_t1"
+            app:layout_constraintTop_toBottomOf="@id/fmain_viewpager"
+
+            />
+
+        <View
+            android:id="@+id/fmain_l2"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="#000"
+            app:layout_constraintLeft_toLeftOf="@id/fmain_t1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fmain_t2"
+
+            />
+
+        <TextView
+            android:id="@+id/fmain_t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="공지내용 들어갑니다."
+            android:textSize="17sp"
+            app:layout_constraintLeft_toLeftOf="@+id/fmain_l2"
+            app:layout_constraintTop_toBottomOf="@+id/fmain_l2" />
+
+        <TextView
+            android:id="@+id/fmain_t4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="2018-10-04."
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fmain_t3"
+            app:layout_constraintLeft_toRightOf="@+id/fmain_t3"
+            app:layout_constraintTop_toTopOf="@+id/fmain_t3" />
+
+        <View
+            android:id="@+id/fmain_l3"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="#a79393"
+            app:layout_constraintLeft_toLeftOf="@+id/fmain_l2"
+            app:layout_constraintRight_toRightOf="@+id/fmain_l2"
+            app:layout_constraintTop_toBottomOf="@+id/fmain_t3"
+
+            />
+
+        <TextView
+            android:id="@+id/fmain_t5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="공지내용 들어갑니다."
+            android:textSize="17sp"
+            app:layout_constraintLeft_toLeftOf="@+id/fmain_l2"
+            app:layout_constraintTop_toBottomOf="@+id/fmain_t3" />
+
+        <TextView
+            android:id="@+id/fmain_t6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="2018-10-04."
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fmain_t5"
+            app:layout_constraintLeft_toRightOf="@+id/fmain_t5"
+            app:layout_constraintTop_toTopOf="@+id/fmain_t5" />
+
+        <View
+            android:id="@+id/fmain_l4"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="#a79393"
+            app:layout_constraintLeft_toLeftOf="@+id/fmain_l2"
+            app:layout_constraintRight_toRightOf="@+id/fmain_l2"
+            app:layout_constraintTop_toBottomOf="@+id/fmain_t5"
+
+            />
+
+        <TextView
+            android:id="@+id/fmain_t7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="공지내용 들어갑니다."
+            android:textSize="17sp"
+            app:layout_constraintLeft_toLeftOf="@+id/fmain_l3"
+            app:layout_constraintTop_toBottomOf="@+id/fmain_l4" />
+
+        <TextView
+            android:id="@+id/fmain_t8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="2018-10-04."
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fmain_t7"
+            app:layout_constraintLeft_toRightOf="@+id/fmain_t7"
+            app:layout_constraintTop_toTopOf="@+id/fmain_t7" />
+
+        <View
+            android:id="@+id/fmain_l5"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="#a79393"
+            app:layout_constraintLeft_toLeftOf="@+id/fmain_l2"
+            app:layout_constraintRight_toRightOf="@+id/fmain_l2"
+            app:layout_constraintTop_toBottomOf="@+id/fmain_t7"
+
+            />
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

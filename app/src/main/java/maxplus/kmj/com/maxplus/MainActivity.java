@@ -17,6 +17,7 @@ import maxplus.kmj.com.maxplus.fragments.DepositFragment;
 import maxplus.kmj.com.maxplus.fragments.ErrorFragment;
 import maxplus.kmj.com.maxplus.fragments.EventFragment;
 import maxplus.kmj.com.maxplus.fragments.EventnoticeFragment;
+import maxplus.kmj.com.maxplus.fragments.MainFragment;
 import maxplus.kmj.com.maxplus.fragments.MediaFragment;
 import maxplus.kmj.com.maxplus.fragments.MessageFragment;
 import maxplus.kmj.com.maxplus.fragments.MoveFragment;
@@ -26,7 +27,7 @@ import maxplus.kmj.com.maxplus.fragments.WithdrawFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    MainFragment mainFragment;
     private DrawerLayout drawer;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +43,9 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        mainFragment=new MainFragment();
+        getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,mainFragment.newInstance()).commit();
+
     }
 
     @Override

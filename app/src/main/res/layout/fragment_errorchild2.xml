@@ -12,7 +12,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:id="@+id/eventnoticechild_childt2"
+            android:id="@+id/errorchild2_childt2"
 
             android:layout_width="match_parent"
             android:layout_height="33dp"
@@ -26,7 +26,7 @@
                 android:layout_weight="1" />
 
             <TextView
-                android:id="@+id/eventnoticechild_tv1"
+                android:id="@+id/errorchild2_tv1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -36,7 +36,7 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/eventnoticechild_tv2"
+                android:id="@+id/errorchild2_tv2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -47,7 +47,7 @@
 
 
             <TextView
-                android:id="@+id/eventnoticechild_tv4"
+                android:id="@+id/errorchild2_tv4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
@@ -65,13 +65,13 @@
         </LinearLayout>
 
         <LinearLayout
-            android:id="@+id/eventnoticechild_childl2"
+            android:id="@+id/errorchild2_childl2"
 
             android:layout_width="match_parent"
             android:layout_height="33dp"
             android:orientation="horizontal"
             android:weightSum="6"
-            app:layout_constraintTop_toBottomOf="@id/eventnoticechild_childt2">
+            app:layout_constraintTop_toBottomOf="@id/errorchild2_childt2">
 
             <TextView
                 android:layout_width="0dp"
@@ -113,75 +113,135 @@
         </LinearLayout>
 
         <View
-            android:id="@+id/eventnoticechild_line"
+            android:id="@+id/errorchild2_line"
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_marginTop="20dp"
             android:background="#000"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/eventnoticechild_childl2"
+            app:layout_constraintTop_toBottomOf="@id/errorchild2_childl2"
 
             />
         <TextView
-            android:id="@+id/eventnoticechild_t4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30sp"
-            app:layout_constraintTop_toBottomOf="@id/eventnoticechild_line"
+            android:id="@+id/errorchild2_tfirst"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/errorchild2_line"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/eventnoticechild_t5"
-            android:text="포인트대박이벤트"
-            android:textSize="23sp"
-            />
-        <TextView
-            android:id="@+id/eventnoticechild_t5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30sp"
-            android:layout_marginRight="30dp"
-            android:text="2018-10-04"
-            android:textSize="23sp"
-            app:layout_constraintLeft_toRightOf="@id/eventnoticechild_t4"
-            app:layout_constraintRight_toRightOf="@id/eventnoticechild_line"
-            app:layout_constraintTop_toBottomOf="@id/eventnoticechild_line" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="23sp"
-            app:layout_constraintTop_toBottomOf="@id/eventnoticechild_line2"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="30dp"
-            android:text="현재 포인트 대박이벤트가 진행중입니다."
-            android:id="@+id/eventnoticechild_t6"
-            />
-        <View
-            android:id="@+id/eventnoticechild_line2"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="20sp"
+            android:text="발생일시"/>
+        <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_marginTop="20dp"
-            android:background="#000"
+            android:orientation="horizontal"
+            android:id="@+id/errorchild2_l1"
+            android:weightSum="5"
+            app:layout_constraintTop_toBottomOf="@id/errorchild2_tfirst"
+            app:layout_constraintLeft_toLeftOf="@id/errorchild2_t4"
+            app:layout_constraintRight_toRightOf="@id/errorchild2_t4"
+            android:layout_height="50dp">
+
+            <EditText
+                android:gravity="center"
+                android:id="@+id/errorchild2_et1"
+                android:layout_width="0dp"
+                android:hint="2018"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:hint="12"
+
+                android:id="@+id/errorchild2_et2"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <EditText
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:hint="03"
+                android:id="@+id/errorchild2_et3"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="0dp"
+                android:id="@+id/errorchild2_et4"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <EditText
+                android:layout_width="0dp"
+                android:hint="16:42"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/errorchild2_t1"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/errorchild2_l1"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/eventnoticechild_t5"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="20sp"
+            android:text="내용"/>
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/errorchild2_c1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-            />
+            android:layout_marginTop="12dp"
+            android:background="#fff"
+            app:layout_constraintLeft_toLeftOf="@id/errorchild2_t4"
 
+            app:layout_constraintTop_toBottomOf="@id/errorchild2_t1">
+
+            <Spinner
+                android:id="@+id/deposit_spinner"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:entries="@array/bit"></Spinner>
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/errorchild2_t3"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@+id/errorchild2_c1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="20sp"
+            android:text="내용"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="#fff"
+            android:gravity="center"
+            android:id="@+id/errorchild2_t4"
+            android:text="리플 구매가 안되요!."
+            app:layout_constraintTop_toBottomOf="@id/errorchild2_t3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
 
         <Button
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:background="@drawable/ic_deposit_bt"
-            android:text="신청완료"
+            android:text="목록으로"
             android:inputType="number"
             android:textColor="#fff"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/eventnoticechild_t6" />
+            app:layout_constraintTop_toBottomOf="@id/errorchild2_t4" />
 
     </android.support.constraint.ConstraintLayout>
 
